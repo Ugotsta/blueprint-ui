@@ -72,27 +72,30 @@ atom-text-editor.is-focused .selection .region {
 }
 
 // gutter styling
-atom-text-editor .gutter .line-number {
-    opacity: 1;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    background-size: 1ch;
-    background-image:
-        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-}
 atom-text-editor .gutter {
     background-color: transparent;
-}
-atom-text-editor .gutter .line-number.cursor-line {
-    color: white;
+
+    .line-number {
+        opacity: 1;
+        border-top: 1px solid rgba(255,255,255,0.05);
+        background-size: 1ch;
+        background-image:
+            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    }
+    .line-number.cursor-line {
+        color: white;
+    }
 }
 
 // cursor styling
-atom-text-editor.editor .cursors .cursor {
-    border: none;
-}
-atom-text-editor.editor .cursors .cursor::after {
-    content: "▎";
-    color: white;
+atom-text-editor.editor .cursors {
+    .cursor {
+        border: none;
+    }
+    .cursor::after {
+        content: "▎";
+        color: white;
+    }
 }
 
 // minimap
