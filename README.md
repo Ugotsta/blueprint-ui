@@ -1,6 +1,8 @@
 ## Blueprint UI
 
-A dark-ish UI theme that wants to look like a blueprint. It abuses modern CSS, making extensive use of gradients, patterns, blend modes, filter effects and othery CPU-hungry eye candy.
+A dark-ish blue UI theme for Atom that wants to look like a blueprint but also wants 3d-ish text effects. I know, silly right? The theme uses text shadows to emphasize code while comments blend legibly in the background.
+
+Best used with Atom One Dark Syntax theme. Other syntax themes may expose how ugly it is inside.
 
 ![One dark UI](atom-blueprint-ui.png)
 

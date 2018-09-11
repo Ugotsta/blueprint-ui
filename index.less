@@ -16,14 +16,9 @@
 @import "styles/tooltips";
 @import "styles/tree-view";
 
-//
 //  SCROLLBARS
-//
-
 ::-webkit-scrollbar {
     background-color: darken(@base-background-color, 15%);
-
-    &-track {}
 
     &-thumb {
         background-color: @base-background-color
@@ -34,6 +29,6 @@
     }
 
     &-corner {
-        background-color: #262626;
+        background-color: rgba(0,0,0,0);
     }
 }
