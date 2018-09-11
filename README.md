@@ -4,9 +4,12 @@ A dark-ish blue UI theme for Atom that wants to look like a blueprint but also w
 
 Best used with Atom One Dark Syntax theme. Other syntax themes may expose how ugly it is inside.
 
-![One dark UI](atom-blueprint-ui.png)
+![Blueprint UI](screenshots/blueprint-ui-main.png)
+![Blueprint UI closeup](screenshots/atom-blueprint-ui.png)
+![Blueprint UI find in JS](screenshots/blueprint-js-find.png)
+![Blueprint UI select in HTML](screenshots/blueprint-select-html.png)
 
-> The font used in the screenshot is [Fira Code iScript](https://github.com/kencrocken/FiraCodeiScript).
+> The font used in the screenshots is [Fira Code iScript](https://github.com/kencrocken/FiraCodeiScript).
 
 FEATURES
 * it's blue
