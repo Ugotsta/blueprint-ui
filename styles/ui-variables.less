@@ -1,20 +1,7 @@
-
-// UI Variables
-// -------------------
-
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
-
 // Text Colors
-@text-color:           hsl(0,0%,66%);
+@text-color:           white;
 @text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
+@text-color-highlight: lighten(@base-background-color, 40%);
 @text-color-selected:  hsl(0,0%,100%);
 
 @text-color-info:    hsl(219,  79%, 66%);
@@ -33,17 +20,17 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
+@base-background-color: #269;
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
-@pane-item-background-color: @base-background-color;
+@pane-item-background-color: darken(@base-background-color, 10%);
 @pane-item-border-color:     @base-border-color;
 
 @input-background-color: @app-background-color;
 @input-border-color:     @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
+@tool-panel-background-color: darken(@base-background-color, 10%);
 @tool-panel-border-color:     @base-border-color;
 
 @inset-panel-background-color: lighten(@base-background-color, 4%);
@@ -60,13 +47,13 @@
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
+@tab-bar-background-color:    darken(@base-background-color, 10%);
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
 @tab-background-color-active: lighten(@tab-bar-background-color, 10%);
 @tab-border-color:            @base-border-color;
 
-@tree-view-background-color: @base-background-color;
+@tree-view-background-color: darken(@base-background-color, 15%);
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
@@ -91,4 +78,4 @@
 
 // Misc
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'Fira Code iScript', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;

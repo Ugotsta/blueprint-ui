@@ -1,3 +1,115 @@
+atom-text-editor {
+    background: @base-background-color;
+    filter: contrast(120%);
+}
+
+// editor background lines
+atom-text-editor:not(.mini) {
+    .line.cursor-line {
+        box-shadow: inset 0 0 30px rgba(255,255,255,0.15);
+    }
+    .line {
+        border-top: 1px solid rgba(255,255,255,0.05);
+        border-left: 2px solid rgba(255,255,255,0.05);
+        background-size:
+        1ch, 17ch;
+        background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.085) 1px, transparent 1px);
+    }
+    .line:nth-child(6) {
+        border-top: 1px solid rgba(255,255,255,0.15);
+    }
+}
+
+// text-shadow effect
+atom-text-editor * {
+    text-shadow:
+        0px 1px 1px #aaa,
+        0px 2px 2px #222,
+        0px 8px 12px rgba(0,0,0,0.5);
+}
+
+// adjustment to add contrast to syntax elements
+atom-text-editor .syntax--source * {
+    filter: contrast(130%);
+}
+
+// style override for comments to make them light and without shadows
+atom-text-editor .syntax--comment {
+    font-style: italic;
+    color: rgba(255,255,255,0.2);
+    text-shadow: none;
+}
+
+// gradient overlay
+atom-text-editor:not(.mini)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(216,224,222,1) 0%,
+            rgba(174,191,188,1) 22%,
+            rgba(153,175,171,1) 33%,
+            rgba(142,166,162,1) 50%,
+            rgba(130,157,152,1) 67%,
+            rgba(78,92,90,0.35) 82%,
+            rgba(14,14,14,0.5) 100%);
+    mix-blend-mode:overlay;
+    pointer-events: none;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+// selection background
+atom-text-editor .selection .region,
+atom-text-editor.is-focused .selection .region {
+    background: rgba(0,0,0,0.25);
+}
+
+// gutter styling
+atom-text-editor .gutter .line-number {
+    opacity: 1;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background-size: 1ch;
+    background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
+atom-text-editor .gutter {
+    background-color: transparent;
+}
+atom-text-editor .gutter .line-number.cursor-line {
+    color: white;
+}
+
+// cursor styling
+atom-text-editor.editor .cursors .cursor {
+    border: none;
+}
+atom-text-editor.editor .cursors .cursor::after {
+    content: "▎";
+    color: white;
+}
+
+// minimap
+atom-text-editor-minimap {
+    mix-blend-mode: screen;
+    border: none;
+    background-size:
+        1ch, 0.075ch;
+    background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(transparent 90%, rgba(255,255,255,0.095));
+}
+atom-text-editor-minimap .minimap-visible-area::after {
+    background: none !important;
+    box-shadow:
+        inset 0 0 70px rgba(255,255,255,0.25);
+}
 
 // Mini Editor
 // -------------------
