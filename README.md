@@ -2,7 +2,7 @@
 
 A dark-ish blue UI theme for Atom that wants to look like a blueprint but also wants 3d-ish text effects. I know, silly right? The theme uses text shadows to emphasize code while comments blend legibly in the background.
 
-Best used with Atom One Dark Syntax theme. Other syntax themes may expose how ugly it is inside.
+Best used with Atom Dark syntax theme (the default dark theme). Also looks great in the [Rain](https://atom.io/themes/rain-syntax). Other syntax themes may expose how ugly it is inside.
 
 ![Blueprint UI](screenshots/blueprint-ui-main.png)
 ![Blueprint UI closeup](screenshots/atom-blueprint-ui.png)
@@ -13,10 +13,9 @@ Best used with Atom One Dark Syntax theme. Other syntax themes may expose how ug
 
 FEATURES
 * it's blue
-* it's real pretty
 * ensures CPU cycles are put to use
 * text-shadows for everything except comments to help focus on code
-* only looks good with Atom One Dark which helps focus instead of searching for syntax themes
+* only looks good with few syntax themes which helps focus instead of searching for syntax themes
 * shoddy code ensures you can show off by submitting improvements
 
 KNOWN BUGS
